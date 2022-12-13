@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+background: linear-gradient(to right, #ACBB78, #799F0C);
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.section{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border: 1px solid;
+}
+.anchor1 , .anchor2 ,.anchor3 ,.anchor4{
+    background-color: black;
+    border-radius: 10%;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    box-shadow: 5px 5px 5px ;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+
+}
+.anchor1:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    background-color: #85D8CE;
+    height: 100%;
+    width: 50%;
+}
+.anchor1:hover::before{
+    left: 0;
+    transition: all 0.7s ease;
+    z-index: -1;
+}
+.anchor1::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50%;
+    background-color: #85D8CE;
+    height: 100%;
+    width: 50%;
+}
+.anchor1:hover::after{
+    right: 0;
+    transition: all 0.7s ease;
+    z-index: -1;
+}
+.anchor2::before{
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background: linear-gradient(to top,#085078, #85D8CE );
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+.anchor2:hover::before{
+    bottom: 0;
+}
+.anchor3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 10%;
+    height: 100%;
+    background-color: #085078;
+    transition: all 0.6s ease;
+}
+.anchor3:hover::before{
+    left: 100%;
+    top: 100%;
+    right: 100%;
+
+}
+.anchor4::before{
+    content: '';
+    position: absolute;
+    top: -60px;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right, #ec2F4B, #009FFF);
+    border-radius: 50%;
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+.anchor4:hover::before{
+    transform: scale(4.0);
+}
+
+
